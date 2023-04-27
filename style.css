@@ -1,0 +1,285 @@
+body{
+    background-image: url(imagens/index.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: black;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 0.125em;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 135px;
+    opacity: 0.8;
+}
+
+h1:hover {
+        text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+        animation: textflicker 0.01s;
+        animation-iteration-count: 50;
+        animation-direction: alternate;
+      }
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.paragrafo {
+    background: #c0c0c0;
+    padding-top: 6px;
+    border: 1px solid rgb(189, 189, 189);
+    box-shadow: 2px 2px gray, 4px 4px black;
+    width: 600px;
+    margin: auto;
+}
+
+.sinal {
+    padding-top: 100px;
+}
+
+p span {
+    color: red;
+}
+
+.space {
+    opacity: 1;
+}
+
+.button1 {
+    text-decoration: none;
+    color: black;
+    background: #c0c0c0;
+    border-radius: 5px;
+    position: center;
+    padding-top: 6px;
+    padding-left: 16px;
+    padding-right: 6px;
+    border: 1px solid rgb(189, 189, 189);
+    box-shadow: 2px 2px gray, 4px 4px black;
+}
+
+.button1:hover {
+    color: red;
+    background: #c0c0c0;
+    box-shadow: -2px -2px gray, -4px -4px black;
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation: textflicker 0.01s;
+    animation-iteration-count: 50;
+    animation-direction: alternate;
+}
+
+.button2 {
+    text-decoration: none;
+    color: red;
+    background: #c0c0c0;
+    border-radius: 5px;
+    position: center;
+    padding: 6px;
+    border: 1px solid rgb(189, 189, 189);
+    box-shadow: 2px 2px gray, 4px 4px black;
+}
+
+.button2:hover {
+    color: black;
+    background: #c0c0c0;
+    box-shadow: -2px -2px gray, -4px -4px black;
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation: textflicker 0.01s;
+    animation-iteration-count: 50;
+    animation-direction: alternate;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 75px;
+  }
+
+li {
+    display: inline;
+    font-size: 35px;
+}
+
+ul li a {
+    color: red;
+    padding: 10px;
+}
+
+.fa-bandcamp:hover {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation: textflicker 0.01s;
+    animation-iteration-count: 50;
+    animation-direction: alternate;
+}
+
+.fa-square-instagram:hover {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation: textflicker 0.01s;
+    animation-iteration-count: 50;
+    animation-direction: alternate;
+}
+
+.fa-spotify:hover {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation: textflicker 0.01s;
+    animation-iteration-count: 50;
+    animation-direction: alternate;
+}
+
+.intro {
+    background: black;
+    border: red;
+    border-style: dashed;
+    border-width: 5px;
+    border-radius: 10px;
+    color: white;
+    animation: blinker 0.1s linear;
+    animation-iteration-count: 7;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    position:absolute;
+    top: 30%;
+    left: 32%;
+    bottom: 42%;
+    right: 32%;
+    min-width: 100px;
+    min-height: 50px;
+    padding: 5%;
+    text-align: center;
+    z-index: 100;
+  }
+
+.resto {
+    z-index: -100;
+}
+
+audio {
+    padding-top: 5%;
+    padding-left: 80%;
+ }
+
+ audio::-webkit-media-controls-panel {
+    background-color: red;
+ }
+
+.flicker3 {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.175rem 0 0.1rem #75fa69;
+    animation: textflicker 2.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.flicker2 {
+    text-shadow: 1.06rem 0 1.06rem #75fa69, -0.175rem 0 0.1rem #75fa69;
+    animation: textflicker 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.flicker1 {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation: textflicker 0.01s;
+    animation-iteration-count: 650;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker {
+    0% { text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;}
+    100% { text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;}
+}
+
+@keyframes blinker {
+    100% {
+      opacity: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    body {
+        background-color: rgb(174, 174, 174);
+        background-image: none;
+    }
+
+    .intro {
+        top: 24%;
+        bottom: 24%;
+        left: 5%;
+        right: 5%;
+        padding-top: 23%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: rgb(174, 174, 174);
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-top: -10px;
+        padding-top: 0px;
+    }
+
+    .intro {
+        top: 24%;
+        bottom: 24%;
+        left: 5%;
+        right: 5%;
+        padding-top: 23%;
+    }
+
+    .paragrafo {
+       width: auto;
+    }
+
+    audio {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 640px) {
+    body {
+        background-color: rgb(174, 174, 174);
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: -50px;
+    }
+
+    .intro {
+        top: 22%;
+        bottom: 22%;
+        left: 5%;
+        right: 5%;
+        padding: 33%;
+    }
+
+    .paragrafo {
+       width: auto;
+    }
+
+    .sinal {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    audio {
+        padding: 0;
+    }
+}
